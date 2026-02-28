@@ -3,8 +3,8 @@
 all: submodules
 
 submodules:
-	git submodule sync --recursive
-	git submodule update --init --recursive
+	git submodule sync games/
+	git submodule update --init games/
 
 update-sync:
 	@if git rev-parse --abbrev-ref HEAD > /dev/null 2>&1 && git remote | grep -q 'origin'; then \
@@ -14,5 +14,5 @@ update-sync:
 			echo "Branch not tracking a remote yet, skipping pull."; \
 		fi; \
 	fi
-	git submodule sync --recursive
-	git submodule update --init --recursive
+	git submodule sync games/
+	git submodule update --init games/

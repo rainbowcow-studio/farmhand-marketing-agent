@@ -7,6 +7,12 @@ submodules:
 	git submodule update --init --recursive
 
 update-sync:
-	git pull
+	@if git rev-parse --abbrev-ref HEAD > /dev/null 2>&1 && git remote | grep -q 'origin'; then \
+		if git merge-base --is-ancestor HEAD @{u} && echo "$$?"; then \
+			git pull; \
+		else \
+			echo "Branch not tracking a remote yet, skipping pull."; \
+		fi; \
+	fi
 	git submodule sync --recursive
 	git submodule update --init --recursive

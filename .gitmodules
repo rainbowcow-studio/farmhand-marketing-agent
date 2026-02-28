@@ -1,12 +1,12 @@
-[submodule "farmhand"]
-	path = farmhand
+[submodule "games/farmhand"]
+	path = games/farmhand
 	url = https://github.com/jeremyckahn/farmhand.git
-[submodule "farmhand-shuffle"]
-	path = farmhand-shuffle
+[submodule "games/farmhand-shuffle"]
+	path = games/farmhand-shuffle
 	url = https://github.com/jeremyckahn/farmhand-shuffle.git
-[submodule "farmhand-match"]
-	path = farmhand-match
+[submodule "games/farmhand-match"]
+	path = games/farmhand-match
 	url = git@github.com:rainbowcow-studio/farmhand-match.git
-[submodule "farmhand-go"]
-	path = farmhand-go
+[submodule "games/farmhand-go"]
+	path = games/farmhand-go
 	url = git@github.com:rainbowcow-studio/farmhand-go.git

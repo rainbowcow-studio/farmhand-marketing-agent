@@ -1,0 +1,12 @@
+[submodule "farmhand"]
+	path = farmhand
+	url = https://github.com/jeremyckahn/farmhand.git
+[submodule "farmhand-shuffle"]
+	path = farmhand-shuffle
+	url = https://github.com/jeremyckahn/farmhand-shuffle.git
+[submodule "farmhand-match"]
+	path = farmhand-match
+	url = git@github.com:rainbowcow-studio/farmhand-match.git
+[submodule "farmhand-go"]
+	path = farmhand-go
+	url = git@github.com:rainbowcow-studio/farmhand-go.git
